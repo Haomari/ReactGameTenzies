@@ -6,6 +6,7 @@
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
 //&display=swap - добавить при подключении через плагин
 @import url(https://fonts.googleapis.com/css?family=Karla:700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular&display=swap);
 // Подключить если есть локальные файлы шрифтов
 //@import "fonts/fonts";
 
@@ -22,14 +23,14 @@ $fontFamily: "Inter";
 $fontSize: 1.28681rem; // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: $veryDarkGrayishBlueColor; // Цвет шрифта по умолчанию
-$whiteBackgroundColor: #FFFFFF;
+$whiteColor: #FFFFFF;
 $veryDarkGrayishBlueColor: #2B283A;
-$limeGreenBackgroundColor:#59E391;
-$veryDarkBlueBackgroundColor: #0B2434;
+$limeGreenColor:#59E391;
+$veryDarkBlueColor: #0B2434;
 $mostlyDesaturatedDarkBlueColor: #4A4E74;
-$lightBlueBackgroundColor:#5035FF;
-$veryLightGrayBackgroundColor:#F5F5F5;
+$lightBlueColor:#5035FF;
+$veryLightGrayColor:#F5F5F5;
+$mainColor: $veryDarkGrayishBlueColor; // Цвет шрифта по умолчанию
 
 // Настройки адаптивной сетки ===============================================================================================================================================================================================================================================================================================
 
@@ -41,7 +42,7 @@ $maxWidth: 511;
 $maxWidthContainer: 360;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 30;
+$containerPadding: 20;
 
 // Ширина срабатывания первого брейкпоинта
 $containerWidth: $maxWidthContainer + $containerPadding;
