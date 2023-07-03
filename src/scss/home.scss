@@ -48,6 +48,21 @@
     }
   }
 
+	&__timer {
+    color: $veryDarkGrayishBlueColor;
+    text-align: center;
+    font-size: 1.2rem;
+		font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02456rem;
+    padding: 0 0.56rem;
+
+		&:not(:last-child) {
+      padding-bottom: 1.44rem;
+    }
+	}
+
   &__game {
     min-width: 100%;
     display: grid;
@@ -91,7 +106,68 @@
 			top: 2px;
 			box-shadow: 0 3px 0px #3c354a;
 		}
+
   }
+
+	&__result{
+		height: rem(200);
+		overflow-y: hidden ;
+		margin: 1.2rem  0;
+		padding: 0.6rem;
+		font-family: 'Roboto Mono', monospace;
+		color: $veryDarkGrayishBlueColor;
+    font-size: 1.1rem;
+		font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02456rem;
+		background-color: #ddc9c9;
+		border-radius: 5%;
+
+		@media (any-hover: hover){
+			&:hover{
+				overflow-y: scroll ;
+			}
+		}
+
+		@media (hover: none) {
+			overflow-y: auto;
+	}
+
+		&_item{
+			
+		}
+	}
+
+	&__reset {
+		position: relative;
+    display: block;
+    background-color: #a30000;
+    width: 5.76rem;
+    height: 2.24rem;
+    border-radius: 8%;
+    margin: 0 auto;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.024rem;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+		box-shadow: 0 5px 0px #3c354a;
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+				background-color: #750000;
+      }
+    }
+
+		&:active{
+			top: 2px;
+			box-shadow: 0 3px 0px #3c354a;
+		}
+	}
 }
 
 .game {
