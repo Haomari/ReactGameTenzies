@@ -150,6 +150,19 @@ function App() {
       .padStart(2, "0")}.${milliseconds.toString().padStart(2, "0")}`;
   };
 
+  // Function to clear game results and local storage
+  function clearResults() {
+    setGameResults([]);
+    localStorage.removeItem("gameResults");
+  }
+
+  // Render the game results list
+  const gameResultsList = gameResults.map((result, index) => (
+    <li key={index}>
+      Place {index + 1}: {formatElapsedTime(result)}
+    </li>
+  ));
+
   return (
     <>
       <Header />
